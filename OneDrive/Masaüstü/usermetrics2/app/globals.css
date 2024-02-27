@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.bg1{
+    border-radius: 10px;
+    border-right: 1px solid rgba(0, 0, 0, 0.30);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.30);
+    border-left: 1px solid rgba(0, 0, 0, 0.30);
+    background: #0062FF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.bg2{
+    border-radius: 8px;
+    border: 1px solid rgba(70, 95, 241, 0.40);
+    background: #FFF;
+    box-shadow: 0px 4px 8px 0px rgba(70, 95, 241, 0.10);
+}
+.asd{
+    -webkit-mask-image: url("../public/bgground.svg");
+
+}
+.css-13cymwt-control{
+    cursor: pointer;
+    border-radius: 8px !important;
+    border-color: rgba(70, 95, 241, 0.4) !important;
+    min-height: 48px !important;
+    height: 48px !important;
+}
+.css-t3ipsp-control{
+    cursor: pointer;
+    border-radius: 8px !important;
+    border-color: rgba(70, 95, 241, 0.4) !important;
+    min-height: 48px !important;
+    height: 48px !important;
+}

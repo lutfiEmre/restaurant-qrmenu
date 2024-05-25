@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:wght@100..900&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Michroma&family=Murecho:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital@0;1&family=Orbitron&family=Poppins&family=Rubik:ital@0;1&display=swap');
+
+
+
+.nunitomedium{
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.nunitoregular{
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.nunitosbold{
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.nunitobold{
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.checkbox-wrapper-15 .cbx {
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+}
+.checkbox-wrapper-15 .cbx span {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translate3d(0, 0, 0);
+}
+.checkbox-wrapper-15 .cbx span:first-child {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    transform: scale(1);
+    vertical-align: middle;
+    border: 2px solid #ADADAD;
+    transition: all 0.2s ease;
+}
+.a15 .cbx span:first-child {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    transform: scale(1);
+    vertical-align: middle;
+    border: 2px solid rgba(102, 102, 102, 1);
+    transition: all 0.2s ease;
+}
+.checkbox-wrapper-15 .cbx span:first-child svg {
+    position: absolute;
+    z-index: 1;
+    width: 80%;
+    height: 80%;
+    top: 1px;
+    left: 2px;
+    fill: none;
+    stroke: white;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 20px;
+    stroke-dashoffset: 20px;
+    transition: all 0.3s ease;
+    transition-delay: 0.1s;
+    transform: translate3d(0, 0, 0);
+}
+.checkbox-wrapper-15 .cbx span:first-child:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #FF4343;
+    box-shadow: 0px 1px 5px 0px #FF4343;
+    display: block;
+    transform: scale(0);
+    opacity: 1;
+    border-radius: 3px;
+    transition-delay: 0.2s;
+}
+.checkbox-wrapper-15 .cbx span:last-child {
+    margin-left: 8px;
+}
+.checkbox-wrapper-15 .cbx span:last-child:after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+
+    transform-origin: 0 0;
+    transform: scaleX(0);
+}
+.checkbox-wrapper-15 .cbx:hover span:first-child {
+    border-color: #FF4343;
+    box-shadow: 0px 1px 5px 0px #FF4343;
+}
+
+.checkbox-wrapper-15 .inp-cbx:checked + .cbx span:first-child {
+    border-color: #FF4343;
+    background: #FF4343;
+    animation: check-15 0.6s ease;
+    box-shadow: 0px 1px 5px 0px #FF4343;
+}
+.checkbox-wrapper-15 .inp-cbx:checked + .cbx span:first-child svg {
+    stroke-dashoffset: 0;
+}
+.checkbox-wrapper-15 .inp-cbx:checked + .cbx span:first-child:before {
+    transform: scale(2.2);
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+.checkbox-wrapper-15 .inp-cbx:checked + .cbx span:last-child {
+    color: #B9B8C3;
+    transition: all 0.3s ease;
+}
+.checkbox-wrapper-15 .inp-cbx:checked + .cbx span:last-child:after {
+    transform: scaleX(1);
+    transition: all 0.3s ease;
+}
+
+@keyframes check-15 {
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+
+.radios input[type=radio] {
+    --s: 1em;     /* control the size */
+    --c: #FF4343; /* the active color */
+
+    height: 16px;
+    aspect-ratio: 1;
+    color: var(--c) !important;
+    border: calc(var(--s)/8) solid #939393;
+    padding: calc(var(--s)/8);
+    background:
+            radial-gradient(farthest-side,var(--c) 94%,#0000)
+            50%/0 0 no-repeat content-box;
+    border-radius: 50%;
+    outline-offset: calc(var(--s)/10);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    font-size: inherit;
+    transition: .3s;
+}
+.radios input[type=radio]:checked {
+    border-color: var(--c);
+    background-size: 100% 100%;
+}
+
+.radios input[type=radio]:disabled {
+    background:
+            linear-gradient(#B0B0B0 0 0)
+            50%/100% 20% no-repeat content-box;
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+@media print {
+    .radios input[type=radio] {
+        -webkit-appearance: auto;
+        -moz-appearance: auto;
+        appearance: auto;
+        background: none;
+    }
+}
+
+.radios label {
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    margin:5px 0;
+    cursor: pointer;
+}
+[type='checkbox']:focus, [type='radio']:focus{
+    --tw-ring-shadow: none !important;
+}
+
+.ql-toolbar.ql-snow{
+    border:none !important;
+}
+.ql-container.ql-snow{
+    border:2px solid #E8E8E8 !important;
+}

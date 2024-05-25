@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tremor-ProgressBar-root svg{
+    width: 200px !important;
+    height: 200px !important;
+}
+.tremor-ProgressBar-root .transition-colors{
+    opacity: 0.1;
+/*    opacity: 0;*/
+}
+.xad ::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 10px;
+    background-color: #B0B0B0;
+
+}
+.xad ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #2B2F42;
+}
+.xad ::-webkit-scrollbar-thumb:hover {
+    border-radius: 10px;
+    background-color: #2B2F42;
+}
+.rounded-tremor-default svg{
+    stroke: black !important;
+    border-radius: 10px !important;
+    fill: black !important;
+}
+.rounded-tremor-default .truncate{
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    color: #B0B0B0;
+}
+.rounded-tremor-default{
+    border-radius: 3px !important;
+}
+.border-tremor-border{
+    border: 1px solid #ADADAD !important;
+}
+.asd1 .rounded-tremor-default{
+    border-radius: 10px !important;
+
+
+}
+.asd1 .border-tremor-border {
+    border: 2px solid #B0B0B0 !important;
+}
+.asd1 .tremor-TextInput-root {
+    border: 2px solid #B0B0B0 !important;
+    box-shadow:  none !important;
+}
+
+.datew .tremor-input{
+    box-shadow: 0px 1px 4px 0px #00000040 !important;
+}
+.datew p{
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+}
+.datew > div{
+    height: 50px !important;
+    display: flex;
+    border-radius: 5px !important;
+    box-shadow: 0px 1px 4px 0px #00000040 !important;
+    border: none !important;
+}
+.datew .tremor-DatePicker-calendarIcon{
+    display: none !important;
+}

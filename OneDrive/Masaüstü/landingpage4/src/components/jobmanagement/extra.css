@@ -1,0 +1,60 @@
+.radios input[type=radio] {
+    --s: 1em;     /* control the size */
+    --c: #FF4343; /* the active color */
+
+    height: 16px;
+    aspect-ratio: 1;
+    color: var(--c) !important;
+    border: calc(var(--s)/8) solid #939393;
+    padding: calc(var(--s)/8);
+    background:
+            radial-gradient(farthest-side,var(--c) 94%,#0000)
+            50%/0 0 no-repeat content-box;
+    border-radius: 50%;
+    outline-offset: calc(var(--s)/10);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    font-size: inherit;
+    transition: .3s;
+}
+.radios input[type=radio]:checked {
+    border-color: var(--c);
+    background-size: 100% 100%;
+}
+
+.radios input[type=radio]:disabled {
+    background:
+            linear-gradient(#B0B0B0 0 0)
+            50%/100% 20% no-repeat content-box;
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+@media print {
+    .radios input[type=radio] {
+        -webkit-appearance: auto;
+        -moz-appearance: auto;
+        appearance: auto;
+        background: none;
+    }
+}
+
+.radios label {
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    margin:5px 0;
+    cursor: pointer;
+}
+[type='checkbox']:focus, [type='radio']:focus{
+    --tw-ring-shadow: none !important;
+}
+
+.ql-toolbar.ql-snow{
+    border:none !important;
+}
+.ql-container.ql-snow{
+    border:2px solid #E8E8E8 !important;
+}
